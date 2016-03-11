@@ -13,8 +13,10 @@ fn main() {
 
     let mut cj = CronJob::new(String::from("00 * *"));
     let mut jt = JobTracker::new(cj);
-    jt.start(move |time| {
+    jt.start(move |job, time| {
         println!("{}", time);
+        //job.stop();
+        true
     });
 
 }
