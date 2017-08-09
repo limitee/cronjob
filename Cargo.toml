@@ -4,4 +4,4 @@ version = "0.0.1"
 authors = ["ming li"]
 
 [dependencies]
-chrono = "0.3"
+chrono = "0.4"
